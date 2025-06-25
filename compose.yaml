@@ -1,7 +1,7 @@
 name: docker-vnc-desktop
 
 services:
-  desktop:
+  server:
     build: .
     ports:
       - "6080:6080"
