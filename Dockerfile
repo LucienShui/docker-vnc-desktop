@@ -6,8 +6,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     ubuntu-mate-desktop \
     tigervnc-standalone-server tigervnc-common \
-    wget python3-minimal \
-    git curl supervisor \
+    git curl wget python3-minimal vim \
+    supervisor \
     dbus-x11 \
     && rm -rf /var/lib/apt/lists/*
 
