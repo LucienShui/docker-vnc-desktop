@@ -1,0 +1,12 @@
+name: docker-vnc-desktop
+
+services:
+  desktop:
+    build: .
+    ports:
+      - "6080:6080"
+      - "5901:5901"
+    environment:
+      - USER=user
+      - PASSWORD=password
+      - RESOLUTION=1920x1080
